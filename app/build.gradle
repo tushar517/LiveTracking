@@ -31,6 +31,8 @@ project.afterEvaluate {
         }
 
         repositories {
+            def githubProperties = new Properties()
+            githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
             maven {
                 name = "GitHubPackages"
 
@@ -39,8 +41,8 @@ project.afterEvaluate {
                 url = uri("https://maven.pkg.github.com/tushar517/LiveTracking")
 
                 credentials {
-                    username = "tushar517"
-                    password = "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"
+                    username = githubProperties['ext.user']
+                    password = githubProperties['ext.key']
                 }
             }
         }
