@@ -2,8 +2,50 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'maven-publish'
 }
+apply from: rootProject.file("github.properties")
 
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+
+                // Replace with your own group ID.
+                groupId 'com.example.fusedlocationtracker'
+
+                // Replace with the name of your library
+                artifactId 'FusedLocationTracker'
+                version '1.0.0'
+            }
+
+            debug(MavenPublication) {
+
+                // Replace with your own group ID.
+                groupId 'com.example.fusedlocationtracker'
+
+                // Replace with the name of your library
+                artifactId 'FusedLocationTracker'
+                version '1.0.0'
+            }
+        }
+
+        repositories {
+            maven {
+                name = "GitHubPackages"
+
+                // Replace GITHUB_USERID with your personal or organisation user ID and
+                // REPOSITORY with the name of the repository on GitHub
+                url = uri("https://maven.pkg.github.com/tushar517/LiveTracking")
+
+                credentials {
+                    username = "tushar517"
+                    password = "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"
+                }
+            }
+        }
+    }
+}
 android {
     compileSdk 32
 
