@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:layout_marginLeft="2dp">
+
+            <TextView
+                android:id="@+id/tv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Index"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:layout_alignParentRight="true">
+
+            </View>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/tv_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                >
+
+            </TextView>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:layout_alignParentRight="true">
+
+            </View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:layout_marginLeft="8dp">
+        <TextView
+            android:id="@+id/tv_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Long"
+            android:textColor="@color/black"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:layout_alignParentRight="true">
+
+            </View>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.1">
+            <TextView
+            android:id="@+id/tv_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+            android:text="Accuracy"
+           >
+
+        </TextView>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:layout_alignParentRight="true">
+
+            </View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:layout_marginLeft="8dp">
+        <TextView
+            android:id="@+id/tv_ttl_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ttl distance"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+
+       >
+
+        </TextView>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:layout_alignParentRight="true">
+
+            </View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black">
+
+    </View>
+
+</LinearLayout>

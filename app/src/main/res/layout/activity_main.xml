@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity">
+
+        <Button
+            android:id="@+id/start_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Location in Background" />
+
+
+        <Button
+            android:id="@+id/stop_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Location"
+            android:layout_below="@+id/start_location" />
+
+    </RelativeLayout>
+</layout>
